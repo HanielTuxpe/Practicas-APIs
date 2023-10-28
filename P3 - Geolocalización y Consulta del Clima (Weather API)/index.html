@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.2/mdb.min.css" rel="stylesheet" />
+    <title>Document</title>
+</head>
+
+<body class="vh-100" style="background-color: #4B515D;">
+    <section class="vh-100" style="background-color: grey;">
+        <div class="container py-5 h-100">
+
+            <div class="row d-flex justify-content-center align-items-center h-100" style="color: #282828;">
+                <div class="col-md-9 col-lg-7 col-xl-5">
+
+                    <div class="card mb-4 gradient-custom" style="border-radius: 25px;">
+                        <div class="card-body p-4">
+
+                            <div id="demo1" class="carousel slide" data-ride="carousel">
+                                <!-- Indicators -->
+                                <ul class="carousel-indicators mb-0">
+                                    <li data-target="#demo1" data-slide-to="0" class="active"></li>
+                                    <li data-target="#demo1" data-slide-to="1"></li>
+                                    <li data-target="#demo1" data-slide-to="2"></li>
+                                </ul>
+                                <!-- Carousel inner -->
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <div class="d-flex justify-content-between mb-4 pb-2">
+                                            <div>
+                                                <h2 class="display-2"><strong id="temp">23°C</strong></h2>
+                                                <p class="text-muted mb-0" id="city">Coimbra, Portugal</p>
+                                            </div>
+                                            <div>
+                                                <img id="img" width="150px">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="card" style="border-radius: 25px;">
+                        <div class="card-body p-4">
+
+                            <div id="demo3" class="carousel slide" data-ride="carousel">
+                                <!-- Indicators -->
+                                <ul class="carousel-indicators mb-0">
+                                    <li data-target="#demo3" data-slide-to="0"></li>
+                                    <li data-target="#demo3" data-slide-to="1"></li>
+                                    <li data-target="#demo3" data-slide-to="2" class="active"></li>
+                                </ul>
+                                <!-- Carousel inner -->
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <div class="d-flex justify-content-around text-center mb-4 pb-3 pt-2">
+                                            <div class="flex-column">
+                                                <p class="small"><strong id="temp1">21°C</strong></p>
+                                                <i class="fas fa-sun fa-2x mb-3" style="color: #ddd;"></i>
+                                                <p class="mb-0"><strong id="day1">Mon</strong></p><br>
+                                                <div>
+                                                    <img id="img1" width="60px">
+                                                </div>
+                                            </div>
+                                            <div class="flex-column">
+                                                <p class="small"><strong id="temp2">20°C</strong></p>
+                                                <i class="fas fa-sun fa-2x mb-3" style="color: #ddd;"></i>
+                                                <p class="mb-0"><strong id="day2">Tue</strong></p><br>
+                                                <div>
+                                                    <img id="img2" width="60px">
+                                                </div>
+                                            </div>
+                                            <div class="flex-column">
+                                                <p class="small"><strong id="temp3">16°C</strong></p>
+                                                <i class="fas fa-cloud fa-2x mb-3" style="color: #ddd;"></i>
+                                                <p class="mb-0"><strong id="day3">Wed</strong></p><br>
+                                                <div>
+                                                    <img id="img3" width="60px">
+                                                </div>
+                                            </div>
+                                            <div class="flex-column">
+                                                <p class="small"><strong id="temp4">17°C</strong></p>
+                                                <i class="fas fa-cloud fa-2x mb-3" style="color: #ddd;"></i>
+                                                <p class="mb-0"><strong id="day4">Thu</strong></p><br>
+                                                <div>
+                                                    <img id="img4" width="60px">
+                                                </div>
+                                            </div>
+                                            <div class="flex-column">
+                                                <p class="small"><strong id="temp5">18°C</strong></p>
+                                                <i class="fas fa-cloud-showers-heavy fa-2x mb-3"
+                                                    style="color: #ddd;"></i>
+                                                <p class="mb-0"><strong id="day5">Fri</strong></p><br>
+                                                <div>
+                                                    <img id="img5" width="60px">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <script src="04geo.js"></script>
+</body>
+
+</html>
