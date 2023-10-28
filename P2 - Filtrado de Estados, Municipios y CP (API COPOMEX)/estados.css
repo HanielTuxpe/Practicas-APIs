@@ -1,0 +1,25 @@
+#div1
+{
+    border: black;
+    background-color: greenyellow;
+    color: aliceblue;
+    padding: 1em;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color:wheat;
+    margin: 0;
+    padding: 10px;
+}
+#div1{
+        width: 400px;
+        margin: 0 auto;
+        padding: 40px 60px 100px;
+        background-color: green;
+        border: 1px solid #ccc;
+        border-radius: 18px;
+        box-shadow: 0 60px 60px rgba(0, 0, 0, 0.3); 
+}
+select{
+    width: 12em;
+}
