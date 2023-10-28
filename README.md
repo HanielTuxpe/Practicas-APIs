@@ -5,7 +5,7 @@
   - El motivo de las practicas mostradas a continuación, es introducirte al manejo de servicios web para su implementación en aplicaciones web.
 Por lo tanto, te puedes encontrar con ejemplos básico.
 
-  - Al ser prácticas escolares, el diseño no puede ser el más llamativo.
+  - Al ser prácticas escolares, el diseño puede no ser el más llamativo o profesional.
 
 # ELABORADO POR:
   - ELABORADO POR HANIEL ANTONIO TUXPEÑO GONZÁLEZ.
