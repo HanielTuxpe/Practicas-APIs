@@ -23,21 +23,26 @@ const img = document.getElementById("img");
 
 const diasSemana = [ "Lunes", "Martes","Miércoles","Jueves","Viernes","Sábado","Domingo"];
 
+//API KEY PROVISTA POR WEATHERAPI
+const key = "efc98b3a6f084d22a25180747230910";
+
 if (navigator.geolocation) {
   console.log("la geolocalizacion esta disponible");
   const FSuccess = (pos) => {
     const lati = pos.coords.latitude;
     const long = pos.coords.longitude;
-    const dir = (href = `http://api.weatherapi.com/v1/forecast.json?key=efc98b3a6f084d22a25180747230910&q=${lati},${long}&days=6&aqi=no&alerts=yes`);
 
     console.log(pos);
     console.log("se obtuvo la ubicacion correctamente");
+    //OBTENCIÓN DE LAS CORDENADAS DE TU UBICACIÓN EN TIEMPO REAL
     console.log(`Tu ubicacion es: Lat:${pos.coords.latitude} Long:${pos.coords.longitude}`
     );
-    fetch(dir)
+    //PETICIÓN A LA API PARA EL REPORTE DEL CLIMA EN TIEMPO REAL DEPENDIENDO DE TU UBICACIÓN
+    fetch(`http://api.weatherapi.com/v1/forecast.json?key=${key}&q=${lati},${long}&days=6&aqi=no&alerts=yes`)
       .then((response) => response.json())
       .then((data) => {
         console.log(data);
+        //EXTTRACCIÓN DE DATOS DEL JSON DE RESPUESTA
 
         //UBICACIÓN
         const loc = data.location.name + ", " + data.location.region + ", " + data.location.country;
